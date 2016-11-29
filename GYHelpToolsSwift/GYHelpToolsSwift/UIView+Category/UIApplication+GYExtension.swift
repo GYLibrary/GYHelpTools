@@ -54,7 +54,7 @@ public extension UIApplication {
         let infoDict = Bundle.main.infoDictionary! as Dictionary<String, AnyObject>
         return infoDict["CFBundleShortVersionString"] as! String
     }
-    
+    /*
     /**
      current App Version released in AppStore
      
@@ -114,7 +114,7 @@ public extension UIApplication {
         
         return false
     }
-    
+    */
 }
 
 
@@ -124,8 +124,8 @@ public extension UIApplication {
     
     func gy_snapShot(inView: UIView) -> UIImage {
         
-        UIGraphicsBeginImageContext(self.bounds.size)
-        self.layer.render(in: UIGraphicsGetCurrentContext()!)
+        UIGraphicsBeginImageContext(inView.bounds.size)
+        inView.layer.render(in: UIGraphicsGetCurrentContext()!)
         
         let snapShot: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
