@@ -14,6 +14,34 @@ import UIKit
 public extension UIView {
     
     
+    /// x == 左
+    var x : CGFloat {
+        get{
+            return self.frame.minX
+        }
+        
+        set(newValue){
+            var frame = self.frame
+            frame.origin.x = newValue
+            self.frame = frame
+            
+        }
+    }
+    
+    /// y == 上
+    var y : CGFloat {
+        get{
+            return self.frame.minX
+        }
+        
+        set(newValue){
+            var frame = self.frame
+            frame.origin.x = newValue
+            self.frame = frame
+            
+        }
+    }
+    
     /// 左坐标
     var gy_left : CGFloat {
         get{

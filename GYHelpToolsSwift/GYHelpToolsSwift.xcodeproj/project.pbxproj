@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B70A34ED1DED18F700103F83 /* UIDevice+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34EC1DED18F700103F83 /* UIDevice+GYExtension.swift */; };
-		B70A34F21DED214100103F83 /* UIButton+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34F11DED214100103F83 /* UIButton+GYExtension.swift */; };
-		B70A34F41DED219500103F83 /* UIApplication+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34F31DED219500103F83 /* UIApplication+GYExtension.swift */; };
-		B70A34F61DED2D0700103F83 /* UIImage+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34F51DED2D0700103F83 /* UIImage+GYExtension.swift */; };
-		B70A34F81DED2DFD00103F83 /* UIImageView+GYBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34F71DED2DFD00103F83 /* UIImageView+GYBlur.swift */; };
-		B70A34FA1DED2E3800103F83 /* UIColor+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34F91DED2E3800103F83 /* UIColor+GYExtension.swift */; };
+		B70A368D1DED30CC00103F83 /* UIApplication+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34FD1DED30CC00103F83 /* UIApplication+GYExtension.swift */; };
+		B70A368E1DED30CC00103F83 /* UIButton+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34FE1DED30CC00103F83 /* UIButton+GYExtension.swift */; };
+		B70A368F1DED30CC00103F83 /* UIColor+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34FF1DED30CC00103F83 /* UIColor+GYExtension.swift */; };
+		B70A36901DED30CC00103F83 /* UIDevice+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A35001DED30CC00103F83 /* UIDevice+GYExtension.swift */; };
+		B70A36911DED30CC00103F83 /* UIImage+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A35011DED30CC00103F83 /* UIImage+GYExtension.swift */; };
+		B70A36921DED30CC00103F83 /* UIImageView+GYBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A35021DED30CC00103F83 /* UIImageView+GYBlur.swift */; };
+		B70A37E41DED30CD00103F83 /* UIView+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A368C1DED30CC00103F83 /* UIView+GYExtension.swift */; };
 		B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507311DE5A13900787B99 /* AppDelegate.swift */; };
 		B7A507341DE5A13900787B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507331DE5A13900787B99 /* ViewController.swift */; };
 		B7A507371DE5A13900787B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A507351DE5A13900787B99 /* Main.storyboard */; };
@@ -20,7 +21,6 @@
 		B7A5073C1DE5A13900787B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5073A1DE5A13900787B99 /* LaunchScreen.storyboard */; };
 		B7A507471DE5A13900787B99 /* GYHelpToolsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507461DE5A13900787B99 /* GYHelpToolsSwiftTests.swift */; };
 		B7A507521DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */; };
-		B7A507611DE5A1CE00787B99 /* UIView+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507601DE5A1CE00787B99 /* UIView+GYExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B70A34EC1DED18F700103F83 /* UIDevice+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+GYExtension.swift"; sourceTree = "<group>"; };
-		B70A34F11DED214100103F83 /* UIButton+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+GYExtension.swift"; sourceTree = "<group>"; };
-		B70A34F31DED219500103F83 /* UIApplication+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+GYExtension.swift"; sourceTree = "<group>"; };
-		B70A34F51DED2D0700103F83 /* UIImage+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+GYExtension.swift"; sourceTree = "<group>"; };
-		B70A34F71DED2DFD00103F83 /* UIImageView+GYBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GYBlur.swift"; sourceTree = "<group>"; };
-		B70A34F91DED2E3800103F83 /* UIColor+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A34FD1DED30CC00103F83 /* UIApplication+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A34FE1DED30CC00103F83 /* UIButton+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A34FF1DED30CC00103F83 /* UIColor+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A35001DED30CC00103F83 /* UIDevice+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A35011DED30CC00103F83 /* UIImage+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A35021DED30CC00103F83 /* UIImageView+GYBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GYBlur.swift"; sourceTree = "<group>"; };
+		B70A368C1DED30CC00103F83 /* UIView+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GYExtension.swift"; sourceTree = "<group>"; };
 		B7A5072E1DE5A13900787B99 /* GYHelpToolsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYHelpToolsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507311DE5A13900787B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A507331DE5A13900787B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		B7A5074D1DE5A13900787B99 /* GYHelpToolsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYHelpToolsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYHelpToolsSwiftUITests.swift; sourceTree = "<group>"; };
 		B7A507531DE5A13900787B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7A507601DE5A1CE00787B99 /* UIView+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GYExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B70A34FB1DED307000103F83 /* Foundation+GYExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Foundation+GYExtension";
+			sourceTree = "<group>";
+		};
+		B70A34FC1DED30CC00103F83 /* UIView+GYExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B70A34FD1DED30CC00103F83 /* UIApplication+GYExtension.swift */,
+				B70A34FE1DED30CC00103F83 /* UIButton+GYExtension.swift */,
+				B70A34FF1DED30CC00103F83 /* UIColor+GYExtension.swift */,
+				B70A35001DED30CC00103F83 /* UIDevice+GYExtension.swift */,
+				B70A35011DED30CC00103F83 /* UIImage+GYExtension.swift */,
+				B70A35021DED30CC00103F83 /* UIImageView+GYBlur.swift */,
+				B70A368C1DED30CC00103F83 /* UIView+GYExtension.swift */,
+			);
+			path = "UIView+GYExtension";
+			sourceTree = "<group>";
+		};
 		B7A507251DE5A13900787B99 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +132,8 @@
 		B7A507301DE5A13900787B99 /* GYHelpToolsSwift */ = {
 			isa = PBXGroup;
 			children = (
-				B7A5075F1DE5A19200787B99 /* UIKit+GYExtension */,
+				B70A34FC1DED30CC00103F83 /* UIView+GYExtension */,
+				B70A34FB1DED307000103F83 /* Foundation+GYExtension */,
 				B7A507311DE5A13900787B99 /* AppDelegate.swift */,
 				B7A507331DE5A13900787B99 /* ViewController.swift */,
 				B7A507351DE5A13900787B99 /* Main.storyboard */,
@@ -138,21 +160,6 @@
 				B7A507531DE5A13900787B99 /* Info.plist */,
 			);
 			path = GYHelpToolsSwiftUITests;
-			sourceTree = "<group>";
-		};
-		B7A5075F1DE5A19200787B99 /* UIKit+GYExtension */ = {
-			isa = PBXGroup;
-			children = (
-				B7A507601DE5A1CE00787B99 /* UIView+GYExtension.swift */,
-				B70A34EC1DED18F700103F83 /* UIDevice+GYExtension.swift */,
-				B70A34F11DED214100103F83 /* UIButton+GYExtension.swift */,
-				B70A34F31DED219500103F83 /* UIApplication+GYExtension.swift */,
-				B70A34F51DED2D0700103F83 /* UIImage+GYExtension.swift */,
-				B70A34F71DED2DFD00103F83 /* UIImageView+GYBlur.swift */,
-				B70A34F91DED2E3800103F83 /* UIColor+GYExtension.swift */,
-			);
-			name = "UIKit+GYExtension";
-			path = "UIView+Category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,14 +300,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7A507341DE5A13900787B99 /* ViewController.swift in Sources */,
-				B70A34FA1DED2E3800103F83 /* UIColor+GYExtension.swift in Sources */,
+				B70A368F1DED30CC00103F83 /* UIColor+GYExtension.swift in Sources */,
 				B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */,
-				B70A34F41DED219500103F83 /* UIApplication+GYExtension.swift in Sources */,
-				B70A34F61DED2D0700103F83 /* UIImage+GYExtension.swift in Sources */,
-				B70A34F21DED214100103F83 /* UIButton+GYExtension.swift in Sources */,
-				B7A507611DE5A1CE00787B99 /* UIView+GYExtension.swift in Sources */,
-				B70A34ED1DED18F700103F83 /* UIDevice+GYExtension.swift in Sources */,
-				B70A34F81DED2DFD00103F83 /* UIImageView+GYBlur.swift in Sources */,
+				B70A37E41DED30CD00103F83 /* UIView+GYExtension.swift in Sources */,
+				B70A36911DED30CC00103F83 /* UIImage+GYExtension.swift in Sources */,
+				B70A368D1DED30CC00103F83 /* UIApplication+GYExtension.swift in Sources */,
+				B70A368E1DED30CC00103F83 /* UIButton+GYExtension.swift in Sources */,
+				B70A36901DED30CC00103F83 /* UIDevice+GYExtension.swift in Sources */,
+				B70A36921DED30CC00103F83 /* UIImageView+GYBlur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
