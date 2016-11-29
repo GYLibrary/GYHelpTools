@@ -14,6 +14,10 @@
 		B70A36911DED30CC00103F83 /* UIImage+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A35011DED30CC00103F83 /* UIImage+GYExtension.swift */; };
 		B70A36921DED30CC00103F83 /* UIImageView+GYBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A35021DED30CC00103F83 /* UIImageView+GYBlur.swift */; };
 		B70A37E41DED30CD00103F83 /* UIView+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A368C1DED30CC00103F83 /* UIView+GYExtension.swift */; };
+		B70A37E61DED439B00103F83 /* NSData+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A37E51DED439B00103F83 /* NSData+GYExtension.swift */; };
+		B70A37E81DED456600103F83 /* NSDate+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A37E71DED456600103F83 /* NSDate+GYExtension.swift */; };
+		B70A37EA1DED475800103F83 /* NSFileManager+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A37E91DED475800103F83 /* NSFileManager+GYExtension.swift */; };
+		B70A37EC1DED48AD00103F83 /* String+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A37EB1DED48AD00103F83 /* String+GYExtension.swift */; };
 		B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507311DE5A13900787B99 /* AppDelegate.swift */; };
 		B7A507341DE5A13900787B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507331DE5A13900787B99 /* ViewController.swift */; };
 		B7A507371DE5A13900787B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A507351DE5A13900787B99 /* Main.storyboard */; };
@@ -48,6 +52,10 @@
 		B70A35011DED30CC00103F83 /* UIImage+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+GYExtension.swift"; sourceTree = "<group>"; };
 		B70A35021DED30CC00103F83 /* UIImageView+GYBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+GYBlur.swift"; sourceTree = "<group>"; };
 		B70A368C1DED30CC00103F83 /* UIView+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A37E51DED439B00103F83 /* NSData+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A37E71DED456600103F83 /* NSDate+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A37E91DED475800103F83 /* NSFileManager+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFileManager+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A37EB1DED48AD00103F83 /* String+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+GYExtension.swift"; sourceTree = "<group>"; };
 		B7A5072E1DE5A13900787B99 /* GYHelpToolsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYHelpToolsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507311DE5A13900787B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A507331DE5A13900787B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +99,10 @@
 		B70A34FB1DED307000103F83 /* Foundation+GYExtension */ = {
 			isa = PBXGroup;
 			children = (
+				B70A37E51DED439B00103F83 /* NSData+GYExtension.swift */,
+				B70A37E71DED456600103F83 /* NSDate+GYExtension.swift */,
+				B70A37E91DED475800103F83 /* NSFileManager+GYExtension.swift */,
+				B70A37EB1DED48AD00103F83 /* String+GYExtension.swift */,
 			);
 			path = "Foundation+GYExtension";
 			sourceTree = "<group>";
@@ -299,11 +311,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70A37E61DED439B00103F83 /* NSData+GYExtension.swift in Sources */,
 				B7A507341DE5A13900787B99 /* ViewController.swift in Sources */,
+				B70A37EA1DED475800103F83 /* NSFileManager+GYExtension.swift in Sources */,
 				B70A368F1DED30CC00103F83 /* UIColor+GYExtension.swift in Sources */,
 				B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */,
 				B70A37E41DED30CD00103F83 /* UIView+GYExtension.swift in Sources */,
 				B70A36911DED30CC00103F83 /* UIImage+GYExtension.swift in Sources */,
+				B70A37EC1DED48AD00103F83 /* String+GYExtension.swift in Sources */,
+				B70A37E81DED456600103F83 /* NSDate+GYExtension.swift in Sources */,
 				B70A368D1DED30CC00103F83 /* UIApplication+GYExtension.swift in Sources */,
 				B70A368E1DED30CC00103F83 /* UIButton+GYExtension.swift in Sources */,
 				B70A36901DED30CC00103F83 /* UIDevice+GYExtension.swift in Sources */,
