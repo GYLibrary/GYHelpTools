@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B70A34ED1DED18F700103F83 /* UIDevice+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34EC1DED18F700103F83 /* UIDevice+GYExtension.swift */; };
+		B70A34F21DED214100103F83 /* UIButton+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34F11DED214100103F83 /* UIButton+GYExtension.swift */; };
+		B70A34F41DED219500103F83 /* UIApplication+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34F31DED219500103F83 /* UIApplication+GYExtension.swift */; };
 		B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507311DE5A13900787B99 /* AppDelegate.swift */; };
 		B7A507341DE5A13900787B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507331DE5A13900787B99 /* ViewController.swift */; };
 		B7A507371DE5A13900787B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A507351DE5A13900787B99 /* Main.storyboard */; };
@@ -14,7 +17,7 @@
 		B7A5073C1DE5A13900787B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5073A1DE5A13900787B99 /* LaunchScreen.storyboard */; };
 		B7A507471DE5A13900787B99 /* GYHelpToolsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507461DE5A13900787B99 /* GYHelpToolsSwiftTests.swift */; };
 		B7A507521DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */; };
-		B7A507611DE5A1CE00787B99 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507601DE5A1CE00787B99 /* UIView+Frame.swift */; };
+		B7A507611DE5A1CE00787B99 /* UIView+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507601DE5A1CE00787B99 /* UIView+GYExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B70A34EC1DED18F700103F83 /* UIDevice+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A34F11DED214100103F83 /* UIButton+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+GYExtension.swift"; sourceTree = "<group>"; };
+		B70A34F31DED219500103F83 /* UIApplication+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+GYExtension.swift"; sourceTree = "<group>"; };
 		B7A5072E1DE5A13900787B99 /* GYHelpToolsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYHelpToolsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507311DE5A13900787B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A507331DE5A13900787B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +54,7 @@
 		B7A5074D1DE5A13900787B99 /* GYHelpToolsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYHelpToolsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYHelpToolsSwiftUITests.swift; sourceTree = "<group>"; };
 		B7A507531DE5A13900787B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7A507601DE5A1CE00787B99 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		B7A507601DE5A1CE00787B99 /* UIView+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+GYExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,7 @@
 		B7A507301DE5A13900787B99 /* GYHelpToolsSwift */ = {
 			isa = PBXGroup;
 			children = (
-				B7A5075F1DE5A19200787B99 /* UIView(Frame) */,
+				B7A5075F1DE5A19200787B99 /* UIKit+GYExtension */,
 				B7A507311DE5A13900787B99 /* AppDelegate.swift */,
 				B7A507331DE5A13900787B99 /* ViewController.swift */,
 				B7A507351DE5A13900787B99 /* Main.storyboard */,
@@ -128,12 +134,15 @@
 			path = GYHelpToolsSwiftUITests;
 			sourceTree = "<group>";
 		};
-		B7A5075F1DE5A19200787B99 /* UIView(Frame) */ = {
+		B7A5075F1DE5A19200787B99 /* UIKit+GYExtension */ = {
 			isa = PBXGroup;
 			children = (
-				B7A507601DE5A1CE00787B99 /* UIView+Frame.swift */,
+				B7A507601DE5A1CE00787B99 /* UIView+GYExtension.swift */,
+				B70A34EC1DED18F700103F83 /* UIDevice+GYExtension.swift */,
+				B70A34F11DED214100103F83 /* UIButton+GYExtension.swift */,
+				B70A34F31DED219500103F83 /* UIApplication+GYExtension.swift */,
 			);
-			name = "UIView(Frame)";
+			name = "UIKit+GYExtension";
 			path = "UIView+Category";
 			sourceTree = "<group>";
 		};
@@ -276,7 +285,10 @@
 			files = (
 				B7A507341DE5A13900787B99 /* ViewController.swift in Sources */,
 				B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */,
-				B7A507611DE5A1CE00787B99 /* UIView+Frame.swift in Sources */,
+				B70A34F41DED219500103F83 /* UIApplication+GYExtension.swift in Sources */,
+				B70A34F21DED214100103F83 /* UIButton+GYExtension.swift in Sources */,
+				B7A507611DE5A1CE00787B99 /* UIView+GYExtension.swift in Sources */,
+				B70A34ED1DED18F700103F83 /* UIDevice+GYExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +539,7 @@
 				B7A507581DE5A13900787B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7A507591DE5A13900787B99 /* Build configuration list for PBXNativeTarget "GYHelpToolsSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +548,7 @@
 				B7A5075B1DE5A13900787B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7A5075C1DE5A13900787B99 /* Build configuration list for PBXNativeTarget "GYHelpToolsSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +557,7 @@
 				B7A5075E1DE5A13900787B99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
