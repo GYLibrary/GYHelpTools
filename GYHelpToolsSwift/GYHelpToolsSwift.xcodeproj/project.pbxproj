@@ -25,6 +25,18 @@
 		B7A5073C1DE5A13900787B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5073A1DE5A13900787B99 /* LaunchScreen.storyboard */; };
 		B7A507471DE5A13900787B99 /* GYHelpToolsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507461DE5A13900787B99 /* GYHelpToolsSwiftTests.swift */; };
 		B7A507521DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */; };
+		B7F4CFF41E14E62600BC94B5 /* GYTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF31E14E62600BC94B5 /* GYTabBarViewController.swift */; };
+		B7F4CFF71E14E65F00BC94B5 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF61E14E65F00BC94B5 /* OneViewController.swift */; };
+		B7F4CFF91E14E66500BC94B5 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF81E14E66500BC94B5 /* TwoViewController.swift */; };
+		B7F4CFFB1E14E66A00BC94B5 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFFA1E14E66A00BC94B5 /* ThreeViewController.swift */; };
+		B7F4CFFD1E14E67200BC94B5 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFFC1E14E67200BC94B5 /* FourViewController.swift */; };
+		B7F4D0041E14E96A00BC94B5 /* DispatchQueue+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFFF1E14E96A00BC94B5 /* DispatchQueue+GYExtension.swift */; };
+		B7F4D0051E14E96A00BC94B5 /* GYNavigatiionBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D0001E14E96A00BC94B5 /* GYNavigatiionBarTransition.swift */; };
+		B7F4D0061E14E96A00BC94B5 /* GYSwizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D0011E14E96A00BC94B5 /* GYSwizzle.swift */; };
+		B7F4D0071E14E96A00BC94B5 /* GYWeakObjectContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D0021E14E96A00BC94B5 /* GYWeakObjectContainer.swift */; };
+		B7F4D0081E14E96A00BC94B5 /* UIViewController+GYNavigationBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D0031E14E96A00BC94B5 /* UIViewController+GYNavigationBarTransition.swift */; };
+		B7F4D00A1E14E97400BC94B5 /* GYNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D0091E14E97400BC94B5 /* GYNavViewController.swift */; };
+		B7F4D00C1E14EEB200BC94B5 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D00B1E14EEB200BC94B5 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +81,18 @@
 		B7A5074D1DE5A13900787B99 /* GYHelpToolsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYHelpToolsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYHelpToolsSwiftUITests.swift; sourceTree = "<group>"; };
 		B7A507531DE5A13900787B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F4CFF31E14E62600BC94B5 /* GYTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabBarViewController.swift; sourceTree = "<group>"; };
+		B7F4CFF61E14E65F00BC94B5 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		B7F4CFF81E14E66500BC94B5 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		B7F4CFFA1E14E66A00BC94B5 /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		B7F4CFFC1E14E67200BC94B5 /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		B7F4CFFF1E14E96A00BC94B5 /* DispatchQueue+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+GYExtension.swift"; sourceTree = "<group>"; };
+		B7F4D0001E14E96A00BC94B5 /* GYNavigatiionBarTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNavigatiionBarTransition.swift; sourceTree = "<group>"; };
+		B7F4D0011E14E96A00BC94B5 /* GYSwizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYSwizzle.swift; sourceTree = "<group>"; };
+		B7F4D0021E14E96A00BC94B5 /* GYWeakObjectContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYWeakObjectContainer.swift; sourceTree = "<group>"; };
+		B7F4D0031E14E96A00BC94B5 /* UIViewController+GYNavigationBarTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GYNavigationBarTransition.swift"; sourceTree = "<group>"; };
+		B7F4D0091E14E97400BC94B5 /* GYNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNavViewController.swift; sourceTree = "<group>"; };
+		B7F4D00B1E14EEB200BC94B5 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +168,9 @@
 		B7A507301DE5A13900787B99 /* GYHelpToolsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B7F4CFFE1E14E96A00BC94B5 /* GYNav */,
+				B7F4CFF51E14E64C00BC94B5 /* DemoVc */,
+				B7F4CFF21E14E61300BC94B5 /* GYTabbar */,
 				B70A34FC1DED30CC00103F83 /* UIView+GYExtension */,
 				B70A34FB1DED307000103F83 /* Foundation+GYExtension */,
 				B7A507311DE5A13900787B99 /* AppDelegate.swift */,
@@ -172,6 +199,39 @@
 				B7A507531DE5A13900787B99 /* Info.plist */,
 			);
 			path = GYHelpToolsSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B7F4CFF21E14E61300BC94B5 /* GYTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4D0091E14E97400BC94B5 /* GYNavViewController.swift */,
+				B7F4CFF31E14E62600BC94B5 /* GYTabBarViewController.swift */,
+			);
+			path = GYTabbar;
+			sourceTree = "<group>";
+		};
+		B7F4CFF51E14E64C00BC94B5 /* DemoVc */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4CFF61E14E65F00BC94B5 /* OneViewController.swift */,
+				B7F4CFF81E14E66500BC94B5 /* TwoViewController.swift */,
+				B7F4CFFA1E14E66A00BC94B5 /* ThreeViewController.swift */,
+				B7F4CFFC1E14E67200BC94B5 /* FourViewController.swift */,
+				B7F4D00B1E14EEB200BC94B5 /* NextViewController.swift */,
+			);
+			path = DemoVc;
+			sourceTree = "<group>";
+		};
+		B7F4CFFE1E14E96A00BC94B5 /* GYNav */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4CFFF1E14E96A00BC94B5 /* DispatchQueue+GYExtension.swift */,
+				B7F4D0001E14E96A00BC94B5 /* GYNavigatiionBarTransition.swift */,
+				B7F4D0011E14E96A00BC94B5 /* GYSwizzle.swift */,
+				B7F4D0021E14E96A00BC94B5 /* GYWeakObjectContainer.swift */,
+				B7F4D0031E14E96A00BC94B5 /* UIViewController+GYNavigationBarTransition.swift */,
+			);
+			path = GYNav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +302,7 @@
 				TargetAttributes = {
 					B7A5072D1DE5A13900787B99 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = NFC68K2BKB;
+						DevelopmentTeam = UZZG6NM74T;
 						ProvisioningStyle = Automatic;
 					};
 					B7A507411DE5A13900787B99 = {
@@ -311,17 +371,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7F4CFF41E14E62600BC94B5 /* GYTabBarViewController.swift in Sources */,
+				B7F4D0061E14E96A00BC94B5 /* GYSwizzle.swift in Sources */,
 				B70A37E61DED439B00103F83 /* NSData+GYExtension.swift in Sources */,
 				B7A507341DE5A13900787B99 /* ViewController.swift in Sources */,
 				B70A37EA1DED475800103F83 /* NSFileManager+GYExtension.swift in Sources */,
 				B70A368F1DED30CC00103F83 /* UIColor+GYExtension.swift in Sources */,
 				B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */,
+				B7F4CFF71E14E65F00BC94B5 /* OneViewController.swift in Sources */,
+				B7F4D00A1E14E97400BC94B5 /* GYNavViewController.swift in Sources */,
 				B70A37E41DED30CD00103F83 /* UIView+GYExtension.swift in Sources */,
+				B7F4D00C1E14EEB200BC94B5 /* NextViewController.swift in Sources */,
+				B7F4CFFD1E14E67200BC94B5 /* FourViewController.swift in Sources */,
+				B7F4D0081E14E96A00BC94B5 /* UIViewController+GYNavigationBarTransition.swift in Sources */,
 				B70A36911DED30CC00103F83 /* UIImage+GYExtension.swift in Sources */,
 				B70A37EC1DED48AD00103F83 /* String+GYExtension.swift in Sources */,
 				B70A37E81DED456600103F83 /* NSDate+GYExtension.swift in Sources */,
+				B7F4D0051E14E96A00BC94B5 /* GYNavigatiionBarTransition.swift in Sources */,
+				B7F4D0071E14E96A00BC94B5 /* GYWeakObjectContainer.swift in Sources */,
+				B7F4CFF91E14E66500BC94B5 /* TwoViewController.swift in Sources */,
 				B70A368D1DED30CC00103F83 /* UIApplication+GYExtension.swift in Sources */,
+				B7F4CFFB1E14E66A00BC94B5 /* ThreeViewController.swift in Sources */,
 				B70A368E1DED30CC00103F83 /* UIButton+GYExtension.swift in Sources */,
+				B7F4D0041E14E96A00BC94B5 /* DispatchQueue+GYExtension.swift in Sources */,
 				B70A36901DED30CC00103F83 /* UIDevice+GYExtension.swift in Sources */,
 				B70A36921DED30CC00103F83 /* UIImageView+GYBlur.swift in Sources */,
 			);
@@ -473,7 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NFC68K2BKB;
+				DEVELOPMENT_TEAM = UZZG6NM74T;
 				INFOPLIST_FILE = GYHelpToolsSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -487,7 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NFC68K2BKB;
+				DEVELOPMENT_TEAM = UZZG6NM74T;
 				INFOPLIST_FILE = GYHelpToolsSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
