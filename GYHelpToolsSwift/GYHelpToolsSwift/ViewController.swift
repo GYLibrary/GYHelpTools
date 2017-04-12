@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -18,7 +19,14 @@ class ViewController: UIViewController {
         
         let str1 = str.gy_stringValue()
         
-        print(str1)
+        print(str1 ?? "")
+        
+        request("www.baidu.com").responseJSON { (response) in
+
+            
+        }
+     
+        
     }
 
     override func didReceiveMemoryWarning() {

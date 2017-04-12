@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30F3146D07151998C285D6C7 /* Pods_GYHelpToolsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFFB59C9F3EEDACF9AD7826D /* Pods_GYHelpToolsSwift.framework */; };
 		B70A368D1DED30CC00103F83 /* UIApplication+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34FD1DED30CC00103F83 /* UIApplication+GYExtension.swift */; };
 		B70A368E1DED30CC00103F83 /* UIButton+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34FE1DED30CC00103F83 /* UIButton+GYExtension.swift */; };
 		B70A368F1DED30CC00103F83 /* UIColor+GYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A34FF1DED30CC00103F83 /* UIColor+GYExtension.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B57BBC7722ADC7E1C972115 /* Pods-GYHelpToolsSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYHelpToolsSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYHelpToolsSwift/Pods-GYHelpToolsSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B70A34FD1DED30CC00103F83 /* UIApplication+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+GYExtension.swift"; sourceTree = "<group>"; };
 		B70A34FE1DED30CC00103F83 /* UIButton+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+GYExtension.swift"; sourceTree = "<group>"; };
 		B70A34FF1DED30CC00103F83 /* UIColor+GYExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+GYExtension.swift"; sourceTree = "<group>"; };
@@ -93,6 +95,8 @@
 		B7F4D0031E14E96A00BC94B5 /* UIViewController+GYNavigationBarTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+GYNavigationBarTransition.swift"; sourceTree = "<group>"; };
 		B7F4D0091E14E97400BC94B5 /* GYNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNavViewController.swift; sourceTree = "<group>"; };
 		B7F4D00B1E14EEB200BC94B5 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		E457FC8BE957D515A5C7C575 /* Pods-GYHelpToolsSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYHelpToolsSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYHelpToolsSwift/Pods-GYHelpToolsSwift.release.xcconfig"; sourceTree = "<group>"; };
+		EFFB59C9F3EEDACF9AD7826D /* Pods_GYHelpToolsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYHelpToolsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F3146D07151998C285D6C7 /* Pods_GYHelpToolsSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +157,8 @@
 				B7A507451DE5A13900787B99 /* GYHelpToolsSwiftTests */,
 				B7A507501DE5A13900787B99 /* GYHelpToolsSwiftUITests */,
 				B7A5072F1DE5A13900787B99 /* Products */,
+				FB78930AFB5D486BD84E7E91 /* Pods */,
+				F47C9E8EB83FA540E0F369A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +241,23 @@
 			path = GYNav;
 			sourceTree = "<group>";
 		};
+		F47C9E8EB83FA540E0F369A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB59C9F3EEDACF9AD7826D /* Pods_GYHelpToolsSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB78930AFB5D486BD84E7E91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B57BBC7722ADC7E1C972115 /* Pods-GYHelpToolsSwift.debug.xcconfig */,
+				E457FC8BE957D515A5C7C575 /* Pods-GYHelpToolsSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -241,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7A507561DE5A13900787B99 /* Build configuration list for PBXNativeTarget "GYHelpToolsSwift" */;
 			buildPhases = (
+				249414B744392261DDEB58F7 /* [CP] Check Pods Manifest.lock */,
 				B7A5072A1DE5A13900787B99 /* Sources */,
 				B7A5072B1DE5A13900787B99 /* Frameworks */,
 				B7A5072C1DE5A13900787B99 /* Resources */,
+				59C1F67151EBF1D54C3E46E2 /* [CP] Embed Pods Frameworks */,
+				137F7911AD29BC50EE5719AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -365,6 +392,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		137F7911AD29BC50EE5719AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYHelpToolsSwift/Pods-GYHelpToolsSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		249414B744392261DDEB58F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59C1F67151EBF1D54C3E46E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYHelpToolsSwift/Pods-GYHelpToolsSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7A5072A1DE5A13900787B99 /* Sources */ = {
@@ -543,6 +618,7 @@
 		};
 		B7A507571DE5A13900787B99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B57BBC7722ADC7E1C972115 /* Pods-GYHelpToolsSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZZG6NM74T;
@@ -557,6 +633,7 @@
 		};
 		B7A507581DE5A13900787B99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E457FC8BE957D515A5C7C575 /* Pods-GYHelpToolsSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UZZG6NM74T;
