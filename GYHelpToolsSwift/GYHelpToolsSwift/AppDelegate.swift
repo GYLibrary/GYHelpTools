@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KeychainSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,10 +21,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UITabBar.appearance().tintColor = UIColor.orange
 //        UINavigationBar.appearance().tintColor = UIColor.orange
         
+//        let user = User()
+//        user.userName = "zgy"
+//        user.userToken = "adhaduw"
+
+        
+       
+        
+        let keyChain = KeychainSwift()
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
 //        window?.rootViewController = GYTabBarViewController()
-        window?.rootViewController = ViewController();
+        
+        if (keyChain.get("user") == nil) {
+            window?.rootViewController = ViewController()
+            keyChain.set("user", forKey: "user")
+
+        } else {
+            window?.rootViewController = GYTabBarViewController()
+            keyChain.delete("user")
+        }
+        
+        
+        
+        
         window?.makeKeyAndVisible()
         
         return true

@@ -5,8 +5,8 @@ use_frameworks!
 
 target 'GYHelpToolsSwift' do
 
-pod 'Alamofire','~> 4.4.0'
-
+    pod 'Alamofire','~> 4.4.0'
+    pod 'KeychainSwift'
 end
 
 
