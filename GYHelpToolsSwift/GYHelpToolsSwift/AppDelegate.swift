@@ -34,14 +34,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.white
 //        window?.rootViewController = GYTabBarViewController()
         
-        if (keyChain.get("user") == nil) {
+//        if (keyChain.get("user") == nil) {
             window?.rootViewController = ViewController()
             keyChain.set("user", forKey: "user")
 
-        } else {
-            window?.rootViewController = GYTabBarViewController()
-            keyChain.delete("user")
-        }
+//        } else {
+//            window?.rootViewController = GYTabBarViewController()
+//            keyChain.delete("user")
+//        }
         
         
         

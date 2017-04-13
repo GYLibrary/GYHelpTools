@@ -21,14 +21,28 @@ class ViewController: UIViewController {
         
         print(str1 ?? "")
         
-        request("www.baidu.com").responseJSON { (response) in
-
-            
-        }
+        
+        let btn = UIButton(type: UIButtonType.custom)
+        btn.frame = CGRect(x: 100, y: 200, width: 200, height: 200)
+        btn.center = self.view.center
+        btn.setTitle("你好", for: UIControlState.normal)
+        btn.backgroundColor = UIColor.blue
+        view.addSubview(btn)
+        btn.addTarget(self, action: #selector(ViewController.request12), for: UIControlEvents.touchUpInside)
+        
+     
      
         
     }
 
+    func request12() {
+        print("1")
+        request("www.baidu.com").response { (data) in
+            print("123")
+        }
+        print("3")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

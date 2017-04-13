@@ -23,6 +23,7 @@
 		B70C9F271E9E039200355180 /* GYHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C9F261E9E039200355180 /* GYHTTPClient.swift */; };
 		B70C9F291E9E040B00355180 /* GYHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C9F281E9E040B00355180 /* GYHttpRequest.swift */; };
 		B70C9F2B1E9E047A00355180 /* GYHTTPParsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C9F2A1E9E047A00355180 /* GYHTTPParsable.swift */; };
+		B70C9F2D1E9E228B00355180 /* GYNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C9F2C1E9E228B00355180 /* GYNetWorking.swift */; };
 		B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507311DE5A13900787B99 /* AppDelegate.swift */; };
 		B7A507341DE5A13900787B99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507331DE5A13900787B99 /* ViewController.swift */; };
 		B7A507371DE5A13900787B99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A507351DE5A13900787B99 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		B70C9F261E9E039200355180 /* GYHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHTTPClient.swift; sourceTree = "<group>"; };
 		B70C9F281E9E040B00355180 /* GYHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHttpRequest.swift; sourceTree = "<group>"; };
 		B70C9F2A1E9E047A00355180 /* GYHTTPParsable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYHTTPParsable.swift; sourceTree = "<group>"; };
+		B70C9F2C1E9E228B00355180 /* GYNetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWorking.swift; sourceTree = "<group>"; };
 		B7A5072E1DE5A13900787B99 /* GYHelpToolsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYHelpToolsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507311DE5A13900787B99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A507331DE5A13900787B99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				B70C9F261E9E039200355180 /* GYHTTPClient.swift */,
 				B70C9F281E9E040B00355180 /* GYHttpRequest.swift */,
 				B70C9F2A1E9E047A00355180 /* GYHTTPParsable.swift */,
+				B70C9F2C1E9E228B00355180 /* GYNetWorking.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				B7F4CFF91E14E66500BC94B5 /* TwoViewController.swift in Sources */,
 				B70A368D1DED30CC00103F83 /* UIApplication+GYExtension.swift in Sources */,
 				B7F4CFFB1E14E66A00BC94B5 /* ThreeViewController.swift in Sources */,
+				B70C9F2D1E9E228B00355180 /* GYNetWorking.swift in Sources */,
 				B70A368E1DED30CC00103F83 /* UIButton+GYExtension.swift in Sources */,
 				B7F4D0041E14E96A00BC94B5 /* DispatchQueue+GYExtension.swift in Sources */,
 				B70A36901DED30CC00103F83 /* UIDevice+GYExtension.swift in Sources */,
