@@ -63,7 +63,7 @@ class GYNetWorking{
             return
         }
         
-        request("www.baidu.com", method: .get, parameters: paramas as! Parameters?, encoding: JSONEncoding.default, headers: nil).responseJSON { (data) in
+      Alamofire.request("www.baidu.com", method: .get, parameters: paramas as! Parameters?, encoding: JSONEncoding.default, headers: nil).responseJSON { (data) in
             switch data.result {
             case .success(let value):
                 
@@ -80,9 +80,11 @@ class GYNetWorking{
     
 }
 
+
+// MARK: - 获取当前网络状态
 extension GYNetWorking {
     
-    /// 获取当前网络状态
+   
      func netWorkStatusWithBlock(_ block: @escaping GYNetWorkState) {
     
         manager?.startListening()
@@ -101,7 +103,19 @@ extension GYNetWorking {
             }
         }
         
-        
     }
     
 }
+
+
+// MARK: - 网络请求
+extension GYNetWorking {
+    
+    func request(_ post: HTTPMethod) -> DataRequest{
+        
+        return SessionManager.default.request("www.baidu.com", method: HTTPMethod.post, parameters: nil, encoding: URLEncoding.default, headers: nil)
+    }
+    
+    
+}
+
