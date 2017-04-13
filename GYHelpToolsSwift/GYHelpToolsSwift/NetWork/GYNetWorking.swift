@@ -44,10 +44,16 @@ typealias GYHttpRequestSuccess = (AnyObject) -> Void
 
 typealias GYHttpRequestFailed = (Error) -> Void?
 
+typealias GYNetWorkState = (GYNetWorkStatus) -> Void
 
 class GYNetWorking{
     
     static let `default`: GYNetWorking = GYNetWorking()
+    
+    
+    /// 网络监听
+    let manager = NetworkReachabilityManager(host: "www.baidu.com")
+
     
     var isRequest: Bool = true
     
@@ -69,9 +75,33 @@ class GYNetWorking{
             }
         }
         
-        
     }
     
     
+}
+
+extension GYNetWorking {
+    
+    /// 获取当前网络状态
+     func netWorkStatusWithBlock(_ block: @escaping GYNetWorkState) {
+    
+        manager?.startListening()
+
+        manager?.listener = { status in
+
+            switch status {
+            case .unknown:
+                block(.UnKnown)
+            case .notReachable:
+                block(.NotReachable)
+            case .reachable(.ethernetOrWiFi):
+                block(.ReachableViaWiFi)
+            case .reachable(.wwan):
+                block(.ReachableViaWWAN)
+            }
+        }
+        
+        
+    }
     
 }

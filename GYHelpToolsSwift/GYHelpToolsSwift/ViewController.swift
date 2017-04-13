@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         
         print(str1 ?? "")
         
+        GYNetWorking.default.netWorkStatusWithBlock { (state) in
+            print(state)
+        }
         
         let btn = UIButton(type: UIButtonType.custom)
         btn.frame = CGRect(x: 100, y: 200, width: 200, height: 200)
@@ -30,7 +33,6 @@ class ViewController: UIViewController {
         view.addSubview(btn)
         btn.addTarget(self, action: #selector(ViewController.request12), for: UIControlEvents.touchUpInside)
         
-     
      
         
     }
