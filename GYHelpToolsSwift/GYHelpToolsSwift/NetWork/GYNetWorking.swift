@@ -143,6 +143,11 @@ extension GYNetWorking {
             }
         }
         
+        Alamofire.request(Router.login(parameters: [:]))
+                 .response { (date) in
+                    print(date)
+                 }
+        
         return SessionManager.default.request("www.baidu.com", method: HTTPMethod.post, parameters: nil, encoding: URLEncoding.default, headers: nil)
         
         
