@@ -16,11 +16,11 @@
 import Foundation
 import Alamofire
 
-public protocol Request {
-    
-    var path:String{get}
-//    var method: HTTPMethod{get}
-    var parameters: [String: Any] {get set}
-    
-    
-}
+//public protocol Request {
+//    
+//    var path:String{get}
+////    var method: HTTPMethod{get}
+//    var parameters: [String: Any] {get set}
+//    
+//    
+//}

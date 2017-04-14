@@ -110,10 +110,42 @@ extension GYNetWorking {
 
 // MARK: - 网络请求
 extension GYNetWorking {
+
     
     func request(_ post: HTTPMethod) -> DataRequest{
         
+        
+        Alamofire.request("").response { (response)  in
+            
+            debugPrint(response)
+        }
+        
+        Alamofire.request("", method: HTTPMethod.post, parameters: nil, encoding: URLEncoding.default, headers: nil)
+            .response { (data) in
+                print(data)
+        }
+        //手动验证
+        Alamofire.request("")
+                 .validate(statusCode: 200..<300)
+                 .validate(contentType: ["application/json"])
+                 .responseData { (response) in
+                    
+                    print(response)
+                    
+        }
+        //自动验证会验证 200...299 之间的状态码并验证响应数据的 Content-Type 是否和请求头的指定的 Accept 类型是否匹配。
+        Alamofire.request("https://httpbin.org/get").validate().responseJSON { response in
+            switch response.result {
+            case .success:
+                print("Validation Successful")
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
         return SessionManager.default.request("www.baidu.com", method: HTTPMethod.post, parameters: nil, encoding: URLEncoding.default, headers: nil)
+        
+        
     }
     
     

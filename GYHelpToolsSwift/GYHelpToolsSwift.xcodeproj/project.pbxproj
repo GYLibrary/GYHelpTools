@@ -31,6 +31,8 @@
 		B7A5073C1DE5A13900787B99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A5073A1DE5A13900787B99 /* LaunchScreen.storyboard */; };
 		B7A507471DE5A13900787B99 /* GYHelpToolsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507461DE5A13900787B99 /* GYHelpToolsSwiftTests.swift */; };
 		B7A507521DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */; };
+		B7A685FC1EA0976E00E291F9 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A685FB1EA0976E00E291F9 /* AccessTokenAdapter.swift */; };
+		B7A685FE1EA09A6500E291F9 /* OAuth2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A685FD1EA09A6500E291F9 /* OAuth2Handler.swift */; };
 		B7F4CFF41E14E62600BC94B5 /* GYTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF31E14E62600BC94B5 /* GYTabBarViewController.swift */; };
 		B7F4CFF71E14E65F00BC94B5 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF61E14E65F00BC94B5 /* OneViewController.swift */; };
 		B7F4CFF91E14E66500BC94B5 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF81E14E66500BC94B5 /* TwoViewController.swift */; };
@@ -93,6 +95,8 @@
 		B7A5074D1DE5A13900787B99 /* GYHelpToolsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYHelpToolsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A507511DE5A13900787B99 /* GYHelpToolsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYHelpToolsSwiftUITests.swift; sourceTree = "<group>"; };
 		B7A507531DE5A13900787B99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A685FB1EA0976E00E291F9 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenAdapter.swift; sourceTree = "<group>"; };
+		B7A685FD1EA09A6500E291F9 /* OAuth2Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Handler.swift; sourceTree = "<group>"; };
 		B7F4CFF31E14E62600BC94B5 /* GYTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabBarViewController.swift; sourceTree = "<group>"; };
 		B7F4CFF61E14E65F00BC94B5 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		B7F4CFF81E14E66500BC94B5 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				B70C9F281E9E040B00355180 /* GYHttpRequest.swift */,
 				B70C9F2A1E9E047A00355180 /* GYHTTPParsable.swift */,
 				B70C9F2C1E9E228B00355180 /* GYNetWorking.swift */,
+				B7A685FB1EA0976E00E291F9 /* AccessTokenAdapter.swift */,
+				B7A685FD1EA09A6500E291F9 /* OAuth2Handler.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				B7F4CFF71E14E65F00BC94B5 /* OneViewController.swift in Sources */,
 				B7F4D00A1E14E97400BC94B5 /* GYNavViewController.swift in Sources */,
 				B70A37E41DED30CD00103F83 /* UIView+GYExtension.swift in Sources */,
+				B7A685FC1EA0976E00E291F9 /* AccessTokenAdapter.swift in Sources */,
 				B70C9F291E9E040B00355180 /* GYHttpRequest.swift in Sources */,
 				B7F4D00C1E14EEB200BC94B5 /* NextViewController.swift in Sources */,
 				B7F4CFFD1E14E67200BC94B5 /* FourViewController.swift in Sources */,
@@ -499,6 +506,7 @@
 				B7F4D0041E14E96A00BC94B5 /* DispatchQueue+GYExtension.swift in Sources */,
 				B70A36901DED30CC00103F83 /* UIDevice+GYExtension.swift in Sources */,
 				B70A36921DED30CC00103F83 /* UIImageView+GYBlur.swift in Sources */,
+				B7A685FE1EA09A6500E291F9 /* OAuth2Handler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
