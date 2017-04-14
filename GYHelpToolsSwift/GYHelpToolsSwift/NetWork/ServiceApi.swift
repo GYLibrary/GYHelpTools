@@ -19,8 +19,11 @@ import UIKit
 /// APIDemo
 class ServiceApi: NSObject {
     
+    #if Debug
     static var host: String = "http://www.baidu.com"
-    
+    #else
+    static var host: String = "http://www.baidu.com"
+    #endif
     
     /// 登录
     ///
@@ -28,7 +31,6 @@ class ServiceApi: NSObject {
     internal class func login() -> String {
         return "\(host)/api/login"
     }
-
     
     /// 注册
     ///

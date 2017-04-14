@@ -66,6 +66,7 @@ enum Router: URLRequestConvertible {
         let url = URL(string: path)!
         
         var mutableURLRequest = URLRequest(url: url)
+        mutableURLRequest.httpMethod = method.rawValue
         
         /// 根据需求设置
         if let token = Router.token {
@@ -76,20 +77,21 @@ enum Router: URLRequestConvertible {
         mutableURLRequest.setValue("1.0", forHTTPHeaderField: "appversion")
         
         switch self {
-        case .login(let parm):
+            
+        case .login(let parm),.register(let parm):
             do {
                 return try Alamofire.JSONEncoding().encode(mutableURLRequest, with: parm)
             } catch  {
                 
             }
-        case .register(let parm):
-            do {
-              return  try Alamofire.JSONEncoding().encode(mutableURLRequest, with: parm)
-            } catch  {
-                
-            }
-        default:
-            return mutableURLRequest
+//        case .register(let parm):
+//            do {
+//              return  try Alamofire.JSONEncoding().encode(mutableURLRequest, with: parm)
+//            } catch  {
+//                
+//            }
+//        default:
+//            return mutableURLRequest
         }
         
         return mutableURLRequest
