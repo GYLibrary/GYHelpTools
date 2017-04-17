@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         btn.addTarget(self, action: #selector(ViewController.request12), for: UIControlEvents.touchUpInside)
         
      
-        
+        GYNetWorking.default.request(HTTPMethod.post)
     }
 
     func request12() {

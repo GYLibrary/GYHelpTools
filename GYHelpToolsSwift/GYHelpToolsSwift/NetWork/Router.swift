@@ -16,7 +16,6 @@
 import UIKit
 import  Alamofire
 
-
 /// URL 以及参数封装
 ///
 /// - login: 登录
