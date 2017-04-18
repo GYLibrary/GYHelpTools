@@ -61,7 +61,9 @@ class GYNetWorking{
     
     /// 网络监听
     let manager = NetworkReachabilityManager(host: "www.baidu.com")
-
+    
+//    var alldataRequestTask:NSMutableArray = NSMutableArray()
+    
     
     var isRequest: Bool = true
     
@@ -139,13 +141,21 @@ extension GYNetWorking {
     ///   - sucess: sucess description
     ///   - failure: failure description
     func requestJson(_ urlRequest: URLRequestConvertible, sucess:@escaping GYHttpRequestSuccess,failure: @escaping GYHttpRequestFailed) {
-        
-        AlamofireManager.default.request(urlRequest)
+       let dataRequest =  AlamofireManager.default.request(urlRequest)
                                 .validate()
                                 .responseJSON { [weak self] (response) in
+                                    
                         self?.handleResponse(response, sucess: sucess, failure: failure)
                                     
         }
+//        Print(dataRequest)
+//        if !alldataRequestTask.contains(dataRequest) {
+//            alldataRequestTask.add(dataRequest)
+//        } else {
+//            dataRequest.cancel()
+//        }
+//        
+//        Print(alldataRequestTask.count)
     }
         
     
@@ -208,7 +218,7 @@ extension GYNetWorking {
 // MARK: - 处理请求结果
 extension GYNetWorking {
     
-    /// 处理请求结果
+    /// 处理请求结果 （根据项目需求修改）
     ///
     /// - Parameters:
     ///   - response: response description
@@ -216,6 +226,7 @@ extension GYNetWorking {
     ///   - failure: failure description
     fileprivate func handleResponse(_ response: DataResponse<Any> ,sucess:@escaping GYHttpRequestSuccess,failure: @escaping GYHttpRequestFailed) {
         
+       
         switch response.result {
         case .success(let json):
             Print(json)
@@ -230,7 +241,7 @@ extension GYNetWorking {
                 sucess(json as AnyObject)
                 
             } else {
-                let errorString = GYErrorCode(rawValue: 404)?.errorString ?? "errcode未解析"
+                let errorString = GYErrorCode(rawValue: 404)?.errorString ?? "Errcode未解析"
                 let userInfo = [NSLocalizedDescriptionKey:errorString]
                 let error: NSError = NSError(domain: errorString, code: 123, userInfo: userInfo)
                 

@@ -34,11 +34,7 @@ class ViewController: UIViewController {
         btn.addTarget(self, action: #selector(ViewController.request12), for: UIControlEvents.touchUpInside)
         
         
-        GYNetWorking.default.requestJson(Router.login(parameters: ["phone1":"15221981520","password":"666666"]), sucess: { (any) in
-            Print(any)
-        }) { (error) in
-            Print(error.localizedDescription)
-        }
+        
         
 //        GYNetWorking.default.requestJson(Router.test, sucess: { (any) in
 //            Print(any)
@@ -48,11 +44,18 @@ class ViewController: UIViewController {
     }
 
     func request12() {
-        print("1")
-        request("www.baidu.com").response { (data) in
-            print("123")
+//        print("1")
+//        request("www.baidu.com").response { (data) in
+//            print("123")
+//        }
+//        print("3")
+        
+        GYNetWorking.default.requestJson(Router.login(parameters: ["phone1":"18211632222","password":"666666"]), sucess: { (any) in
+            Print(any)
+        }) { (error) in
+            Print(error.localizedDescription)
         }
-        print("3")
+        
     }
     
     override func didReceiveMemoryWarning() {
