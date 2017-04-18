@@ -16,6 +16,15 @@
 import UIKit
 import Alamofire
 
+public func Print<T>(_ message: T,file: String = #file,method: String = #function, line: Int = #line)
+{
+    #if DEBUG
+        print("\((file as NSString).lastPathComponent)[\(line)], \(method): \(message)")
+    #endif
+}
+
+typealias AlamofireManager = Alamofire.SessionManager
+
 enum GYNetWorkStatus {
     
     /// 未知网络
@@ -42,14 +51,13 @@ enum GYRequestSerializer {
 
 typealias GYHttpRequestSuccess = (AnyObject) -> Void
 
-typealias GYHttpRequestFailed = (Error) -> Void?
+typealias GYHttpRequestFailed = (Error) -> Void
 
 typealias GYNetWorkState = (GYNetWorkStatus) -> Void
 
 class GYNetWorking{
     
     static let `default`: GYNetWorking = GYNetWorking()
-    
     
     /// 网络监听
     let manager = NetworkReachabilityManager(host: "www.baidu.com")
@@ -73,6 +81,8 @@ class GYNetWorking{
                 failure?(error as NSError)
                 self.isRequest = false
             }
+        
+        
         }
         
     }
@@ -105,12 +115,50 @@ extension GYNetWorking {
         
     }
     
+    fileprivate func isReachable() -> Bool{
+        return (manager?.isReachable)!
+    }
+    
+    fileprivate func isWWANetwork() -> Bool {
+        return (manager?.isReachableOnWWAN)!
+    }
+    
+    fileprivate func isWiFiNetwork() -> Bool {
+        return (manager?.isReachableOnEthernetOrWiFi)!
+    }
 }
 
 
 // MARK: - 网络请求
 extension GYNetWorking {
-
+    
+    /// 自动校验 返回Json格式
+    ///
+    /// - Parameters:
+    ///   - urlRequest: urlRequest description
+    ///   - sucess: sucess description
+    ///   - failure: failure description
+    func requestJson(_ urlRequest: URLRequestConvertible, sucess:@escaping GYHttpRequestSuccess,failure: @escaping GYHttpRequestFailed) {
+        
+        AlamofireManager.default.request(urlRequest)
+                                .validate()
+                                .responseJSON { [weak self] (response) in
+                        self?.handleResponse(response, sucess: sucess, failure: failure)
+                                    
+        }
+    }
+        
+    
+    
+    func request(_ urlRequest: URLRequestConvertible, sucess:GYHttpRequestSuccess,failure: GYHttpRequestFailed) -> DataRequest {
+        
+        return SessionManager.default.request(urlRequest)
+        
+    }
+    
+    
+    
+    // MARK: - -----------------
     
     func request(_ post: HTTPMethod) -> DataRequest{
         
@@ -153,6 +201,49 @@ extension GYNetWorking {
         
     }
     
+    
+}
+
+
+// MARK: - 处理请求结果
+extension GYNetWorking {
+    
+    /// 处理请求结果
+    ///
+    /// - Parameters:
+    ///   - response: response description
+    ///   - sucess: sucess description
+    ///   - failure: failure description
+    fileprivate func handleResponse(_ response: DataResponse<Any> ,sucess:@escaping GYHttpRequestSuccess,failure: @escaping GYHttpRequestFailed) {
+        
+        switch response.result {
+        case .success(let json):
+            Print(json)
+            var result = json as! [String:AnyObject]
+            
+            guard let code = result["state"]?.int8Value else {
+                return
+            }
+            
+            if code > 0 {
+                
+                sucess(json as AnyObject)
+                
+            } else {
+                let errorString = GYErrorCode(rawValue: 404)?.errorString ?? "errcode未解析"
+                let userInfo = [NSLocalizedDescriptionKey:errorString]
+                let error: NSError = NSError(domain: errorString, code: 123, userInfo: userInfo)
+                
+                failure(error)
+            }
+            
+        case .failure(let error):
+            
+            failure(error)
+        }
+
+        
+    }
     
 }
 

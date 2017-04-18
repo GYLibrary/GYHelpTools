@@ -35,6 +35,9 @@
 		B7A685FE1EA09A6500E291F9 /* OAuth2Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A685FD1EA09A6500E291F9 /* OAuth2Handler.swift */; };
 		B7A686061EA0CBC700E291F9 /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A686051EA0CBC700E291F9 /* ServiceApi.swift */; };
 		B7A686081EA0CC6900E291F9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A686071EA0CC6800E291F9 /* Router.swift */; };
+		B7E565F71EA59DEF00EF3C26 /* GYNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E565F61EA59DEF00EF3C26 /* GYNetWork.swift */; };
+		B7E565F91EA5B15700EF3C26 /* GYNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E565F81EA5B15700EF3C26 /* GYNetManager.swift */; };
+		B7E565FE1EA5E5EA00EF3C26 /* GYErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E565FD1EA5E5EA00EF3C26 /* GYErrorCode.swift */; };
 		B7F4CFF41E14E62600BC94B5 /* GYTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF31E14E62600BC94B5 /* GYTabBarViewController.swift */; };
 		B7F4CFF71E14E65F00BC94B5 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF61E14E65F00BC94B5 /* OneViewController.swift */; };
 		B7F4CFF91E14E66500BC94B5 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F4CFF81E14E66500BC94B5 /* TwoViewController.swift */; };
@@ -101,6 +104,9 @@
 		B7A685FD1EA09A6500E291F9 /* OAuth2Handler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Handler.swift; sourceTree = "<group>"; };
 		B7A686051EA0CBC700E291F9 /* ServiceApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		B7A686071EA0CC6800E291F9 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B7E565F61EA59DEF00EF3C26 /* GYNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetWork.swift; sourceTree = "<group>"; };
+		B7E565F81EA5B15700EF3C26 /* GYNetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNetManager.swift; sourceTree = "<group>"; };
+		B7E565FD1EA5E5EA00EF3C26 /* GYErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYErrorCode.swift; sourceTree = "<group>"; };
 		B7F4CFF31E14E62600BC94B5 /* GYTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTabBarViewController.swift; sourceTree = "<group>"; };
 		B7F4CFF61E14E65F00BC94B5 /* OneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		B7F4CFF81E14E66500BC94B5 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
@@ -174,11 +180,14 @@
 				B70C9F261E9E039200355180 /* GYHTTPClient.swift */,
 				B70C9F281E9E040B00355180 /* GYHttpRequest.swift */,
 				B70C9F2A1E9E047A00355180 /* GYHTTPParsable.swift */,
-				B70C9F2C1E9E228B00355180 /* GYNetWorking.swift */,
 				B7A685FB1EA0976E00E291F9 /* AccessTokenAdapter.swift */,
 				B7A685FD1EA09A6500E291F9 /* OAuth2Handler.swift */,
 				B7A686051EA0CBC700E291F9 /* ServiceApi.swift */,
 				B7A686071EA0CC6800E291F9 /* Router.swift */,
+				B7E565FD1EA5E5EA00EF3C26 /* GYErrorCode.swift */,
+				B70C9F2C1E9E228B00355180 /* GYNetWorking.swift */,
+				B7E565F61EA59DEF00EF3C26 /* GYNetWork.swift */,
+				B7E565F81EA5B15700EF3C26 /* GYNetManager.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -489,6 +498,7 @@
 				B70A37EA1DED475800103F83 /* NSFileManager+GYExtension.swift in Sources */,
 				B70A368F1DED30CC00103F83 /* UIColor+GYExtension.swift in Sources */,
 				B7A507321DE5A13900787B99 /* AppDelegate.swift in Sources */,
+				B7E565F71EA59DEF00EF3C26 /* GYNetWork.swift in Sources */,
 				B7A686061EA0CBC700E291F9 /* ServiceApi.swift in Sources */,
 				B7F4CFF71E14E65F00BC94B5 /* OneViewController.swift in Sources */,
 				B7A686081EA0CC6900E291F9 /* Router.swift in Sources */,
@@ -500,9 +510,11 @@
 				B7F4CFFD1E14E67200BC94B5 /* FourViewController.swift in Sources */,
 				B7F4D0081E14E96A00BC94B5 /* UIViewController+GYNavigationBarTransition.swift in Sources */,
 				B70A36911DED30CC00103F83 /* UIImage+GYExtension.swift in Sources */,
+				B7E565FE1EA5E5EA00EF3C26 /* GYErrorCode.swift in Sources */,
 				B70A37EC1DED48AD00103F83 /* String+GYExtension.swift in Sources */,
 				B70C9F2B1E9E047A00355180 /* GYHTTPParsable.swift in Sources */,
 				B70C9F271E9E039200355180 /* GYHTTPClient.swift in Sources */,
+				B7E565F91EA5B15700EF3C26 /* GYNetManager.swift in Sources */,
 				B70A37E81DED456600103F83 /* NSDate+GYExtension.swift in Sources */,
 				B7F4D0051E14E96A00BC94B5 /* GYNavigatiionBarTransition.swift in Sources */,
 				B7F4D0071E14E96A00BC94B5 /* GYWeakObjectContainer.swift in Sources */,

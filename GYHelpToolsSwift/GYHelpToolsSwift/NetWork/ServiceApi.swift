@@ -19,8 +19,8 @@ import UIKit
 /// APIDemo
 class ServiceApi: NSObject {
     
-    #if Debug
-    static var host: String = "http://www.baidu.com"
+    #if DEBUG
+    static var host: String = "http://wechat.hoyofuwu.com"
     #else
     static var host: String = "http://www.baidu.com"
     #endif
@@ -29,7 +29,7 @@ class ServiceApi: NSObject {
     ///
     /// - Returns: return value description
     internal class func login() -> String {
-        return "\(host)/api/login"
+        return "\(host)/FamilyAccount/AppLogin"
     }
     
     /// 注册
@@ -37,5 +37,9 @@ class ServiceApi: NSObject {
     /// - Returns: return value description
     internal class func register() -> String {
         return "\(host)/api/register"
+    }
+    
+    internal class func test() -> String {
+        return "https://api.github.com/repos/ozner-app-ios-org/updateApi/contents/InesUpdateFile/inse.json"
     }
 }

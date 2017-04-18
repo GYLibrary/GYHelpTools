@@ -24,8 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let user = User()
 //        user.userName = "zgy"
 //        user.userToken = "adhaduw"
-
-        
        
         
         let keyChain = KeychainSwift()

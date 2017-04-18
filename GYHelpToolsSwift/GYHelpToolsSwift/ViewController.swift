@@ -33,8 +33,18 @@ class ViewController: UIViewController {
         view.addSubview(btn)
         btn.addTarget(self, action: #selector(ViewController.request12), for: UIControlEvents.touchUpInside)
         
-     
-        GYNetWorking.default.request(HTTPMethod.post)
+        
+        GYNetWorking.default.requestJson(Router.login(parameters: ["phone1":"15221981520","password":"666666"]), sucess: { (any) in
+            Print(any)
+        }) { (error) in
+            Print(error.localizedDescription)
+        }
+        
+//        GYNetWorking.default.requestJson(Router.test, sucess: { (any) in
+//            Print(any)
+//        }) { (error) in
+//            
+//        }
     }
 
     func request12() {

@@ -16,6 +16,7 @@
 import UIKit
 import  Alamofire
 
+
 /// URL 以及参数封装
 ///
 /// - login: 登录
@@ -29,9 +30,9 @@ enum Router: URLRequestConvertible {
 
     static var token:String?
     
-    case login(parameters:[String: AnyObject])
+    case login(parameters:[String: String])
     case register(parameters:[String: AnyObject])
-    
+    case test
     
     /// 请求方式
     var method: Alamofire.HTTPMethod {
@@ -42,6 +43,8 @@ enum Router: URLRequestConvertible {
             return .post
         case .register:
             return .post
+        case .test:
+            return .get
 
         }
         
@@ -56,6 +59,8 @@ enum Router: URLRequestConvertible {
             return ServiceApi.login()
         case .register:
             return ServiceApi.register()
+        case .test:
+            return ServiceApi.test()
         }
         
     }
@@ -68,29 +73,29 @@ enum Router: URLRequestConvertible {
         mutableURLRequest.httpMethod = method.rawValue
         
         /// 根据需求设置
-        if let token = Router.token {
-            mutableURLRequest.setValue("\(token)", forHTTPHeaderField: "token")
-        }
-        
-        mutableURLRequest.setValue("com.ozner", forHTTPHeaderField: "clientid")
-        mutableURLRequest.setValue("1.0", forHTTPHeaderField: "appversion")
+//        if let token = Router.token {
+//            mutableURLRequest.setValue("\(token)", forHTTPHeaderField: "token")
+//        }
+//        
+//        mutableURLRequest.setValue("com.ozner", forHTTPHeaderField: "clientid")
+//        mutableURLRequest.setValue("1.0", forHTTPHeaderField: "appversion")
         
         switch self {
             
-        case .login(let parm),.register(let parm):
+        case .login(let parm):
             do {
                 return try Alamofire.JSONEncoding().encode(mutableURLRequest, with: parm)
             } catch  {
                 
             }
-//        case .register(let parm):
-//            do {
-//              return  try Alamofire.JSONEncoding().encode(mutableURLRequest, with: parm)
-//            } catch  {
-//                
-//            }
-//        default:
-//            return mutableURLRequest
+        case .register(let parm):
+            do {
+              return  try Alamofire.JSONEncoding().encode(mutableURLRequest, with: parm)
+            } catch  {
+                
+            }
+        default:
+            return mutableURLRequest
         }
         
         return mutableURLRequest
