@@ -53,6 +53,8 @@ typealias GYHttpRequestSuccess = (AnyObject) -> Void
 
 typealias GYHttpRequestFailed = (Error) -> Void
 
+typealias GYAlamofireResponse = (DataResponse<Any>) -> Void
+
 typealias GYNetWorkState = (GYNetWorkStatus) -> Void
 
 class GYNetWorking{
@@ -62,7 +64,8 @@ class GYNetWorking{
     /// 网络监听
     let manager = NetworkReachabilityManager(host: "www.baidu.com")
     
-//    var alldataRequestTask:NSMutableArray = NSMutableArray()
+    var isCached = false
+    var alldataRequestTask:NSMutableArray = NSMutableArray()
     
     
     var isRequest: Bool = true
@@ -140,22 +143,32 @@ extension GYNetWorking {
     ///   - urlRequest: urlRequest description
     ///   - sucess: sucess description
     ///   - failure: failure description
-    func requestJson(_ urlRequest: URLRequestConvertible, sucess:@escaping GYHttpRequestSuccess,failure: @escaping GYHttpRequestFailed) {
-       let dataRequest =  AlamofireManager.default.request(urlRequest)
-                                .validate()
-                                .responseJSON { [weak self] (response) in
-                                    
-                        self?.handleResponse(response, sucess: sucess, failure: failure)
-                                    
+    @discardableResult
+    func requestJson(_ urlRequest: URLRequestConvertible, sucess:@escaping GYHttpRequestSuccess,failure: @escaping GYHttpRequestFailed) -> DataRequest{
+        
+        let responseJSON: (DataResponse<Any>) -> Void = { [weak self]  (response:DataResponse<Any>) in
+            
+            self?.handleResponse(response, sucess: sucess, failure: failure)
+            
         }
-//        Print(dataRequest)
-//        if !alldataRequestTask.contains(dataRequest) {
-//            alldataRequestTask.add(dataRequest)
-//        } else {
-//            dataRequest.cancel()
-//        }
-//        
-//        Print(alldataRequestTask.count)
+//        Print(urlRequest == urlRequest)
+       let dataRequest =  AlamofireManager.default.request(urlRequest)
+                                          .validate()
+        .responseJSON(completionHandler: responseJSON)
+//                                          .responseJSON { [weak self] (response) in
+//                                        
+//                                    self?.handleResponse(response, sucess: sucess, failure: failure)
+//                                    
+//                        }
+
+        if !alldataRequestTask.contains(dataRequest) {
+            alldataRequestTask.add(dataRequest)
+        } else {
+            dataRequest.cancel()
+        }
+        
+        Print(alldataRequestTask.count)
+        return dataRequest
     }
         
     

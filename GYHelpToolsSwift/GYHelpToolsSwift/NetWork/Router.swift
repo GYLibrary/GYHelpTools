@@ -71,7 +71,8 @@ enum Router: URLRequestConvertible {
         
         var mutableURLRequest = URLRequest(url: url)
         mutableURLRequest.httpMethod = method.rawValue
-        
+        //缓存策略
+//        mutableURLRequest.cachePolicy = .useProtocolCachePolicy
         /// 根据需求设置
 //        if let token = Router.token {
 //            mutableURLRequest.setValue("\(token)", forHTTPHeaderField: "token")

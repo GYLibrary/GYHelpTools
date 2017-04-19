@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         let str = "   123456123"
         
         let str1 = str.gy_stringValue()
@@ -50,7 +49,7 @@ class ViewController: UIViewController {
 //        }
 //        print("3")
         
-        GYNetWorking.default.requestJson(Router.login(parameters: ["phone1":"18211632222","password":"666666"]), sucess: { (any) in
+        GYNetWorking.default.requestJson(Router.login(parameters: ["phone":"18211676899","password":"666666"]), sucess: { (any) in
             Print(any)
         }) { (error) in
             Print(error.localizedDescription)
