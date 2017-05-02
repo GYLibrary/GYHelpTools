@@ -180,6 +180,19 @@ extension GYNetWorking {
     }
     
     
+    /// 取消当前所有网络请求
+    func removeAllrequest() {
+        
+        alldataRequestTask.enumerateObjects({ (task, _, isbool) in
+            
+            let taskR = task as! DataRequest
+            taskR.cancel()
+            
+        })
+        
+    }
+    
+    
     
     // MARK: - -----------------
     
